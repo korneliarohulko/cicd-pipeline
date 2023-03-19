@@ -20,6 +20,15 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        script {
+          sh 'script scripts/test.sh'
+        }
+
+      }
+    }
+
   }
   environment {
     registry = 'kornelia22322/cicdhomework'
