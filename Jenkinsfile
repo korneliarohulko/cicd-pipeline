@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
           checkout scm
-          sh(scripts/build.sh)
+          .scripts/build.sh
         }
 
       }
