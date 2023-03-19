@@ -52,6 +52,6 @@ pipeline {
 
   }
   environment {
-    registry = 'kornelia22322/cicdhomework'
+    registry = 'kornelia22322/cicd'
   }
 }
