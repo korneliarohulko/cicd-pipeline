@@ -29,6 +29,15 @@ pipeline {
       }
     }
 
+    stage('Build Image') {
+      steps {
+        script {
+          sh 'docker build -t ${registry}:$BUILD_NUMBER -t ${registry}:latest .'
+        }
+
+      }
+    }
+
   }
   environment {
     registry = 'kornelia22322/cicdhomework'
